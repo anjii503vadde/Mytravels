@@ -1,31 +1,36 @@
+$background-cover : cover;
+$image-text-color : white;
+$position-absolute : absolute;
+$length : 100%;
+
 html,
 body,
 header,
 #hero-image {
-    height: 100%;
+    height: $length;
 }
 #hero-image {
     background: url("../img/hero1.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-    height: 100%;
+    -webkit-background-size: $background-cover;
+    -moz-background-size: $background-cover;
+    -o-background-size: $background-cover;
+    background-size: $background-cover;
+    color: $image-text-color;
+    height: $length;
 }
 #hero-caption {
-    width: 100%;
+    width: $length;
 }
 
 img {
-    max-width: 100%;
+    max-width: $length;
 }
 .carousel-content {
-    position: absolute;
+    position: $position-absolute;
     bottom: 10%;
     left: 5%;
     z-index: 20;
-    color: white;
+    color: $image-text-color;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
   }
   
